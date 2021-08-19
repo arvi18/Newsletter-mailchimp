@@ -4,10 +4,11 @@ const request=require("request");
 const parser=require("body-parser");
 const app=express();
 
-app.use(parser.urlencoded({extended:true}));
+// app.use(parser.urlencoded({extended:true}));
+app.use(express.static("public"))
 
 app.get("/", function(req, res){
-    res.sendFile(__dirname+"/index.html")
+    res.sendFile(__dirname+"/signup.html")
 });
 
 app.post("/", function(req, res){
