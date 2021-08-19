@@ -45,8 +45,3 @@ app.post("/", function(req, res){
 app.listen(8000, ()=>{
     console.log("Running on port 8000.")
 }); 
-
-//a869d02ebe6bfcb4907db74c78f15c63-us5
-
-
-//a4e55816bb
